@@ -1,0 +1,29 @@
+"""
+Notes from the Codecademy lessons:
+
+Use the following for making a lowercase version of a column
+import string
+
+df['shoe_type'] = df.shoe_type.apply(string.lower)
+df['Lowercase Name'] = df.Name.apply(str.lower)
+
+We can use the apply function to apply a function to every value in a particular column. 
+For example, this code overwrites the existing 'Name' columns by applying the function upper to every row in 'Name'.
+
+so we know how to create new columns, filter columns, lambda functions on columns or on rows
+
+df.groupby(['month', 'utm_source']).id.count().reset_index()
+df.column.unique() gives a list of all unique entries
+df.column.nunique() gives the count of unique entries into a column
+df.column.median() gives the median of a column
+mean, std, max, median, min, count, nunique, unique are all available aggregate commands
+
+df.groupby('column1').column2.measurement()
+use numpy percentile function np.percentile(x,75)
+
+pivot tables
+df.pivot(columns='ColumnToPivot',
+         index='ColumnToBeRows',
+         values='ColumnToBeValues')
+
+"""
