@@ -1,0 +1,37 @@
+Bayes: P(B|A) = P(A|B)*P(B)/P(A)
+
+P(ST|-) = P(-|ST)*P(ST)/P(-)
+= 0.15*0.2/P(-)
+
+P(-) = P(ST and -) + P(NO ST and -)
+= 0.03 + 0.784
+= 0.814
+
+P(ST|-) = .15*.2/.814 = .037
+
+P(NO ST | +) = 1-P(ST|+) = 1-0.914 = .086
+P(NO ST | -) = 1-P(ST|-) = 1-0.037 = .963
+
+3O 2G 5B = 10
+5/10*3/9 = 1/6
+
+18
+P(B|O)
+
+P(IC|LATE) = P(LATE|IC)*P(IC)/P(LATE)
+P(LATE|IC) = 0.85
+P(IC) = 0.9
+P(LATE) = P(LATE and IC) + P(LATE and NO IC)
+ = 0.765 + 0.04
+P(IC|LATE) = P(LATE|IC)*P(IC)/P(LATE) = (0.85*0.9)/(0.765 + 0.04) = 
+
+model = sm.OLS.from_formula('blood_pressure ~ exercise', data = data).fit()
+ax.set_xticks([0, 1, 2, 3, 4, 5, 6, 7, 8])
+
+Starting EDA functions:
+print(df.info())
+print(df[df.isnull().any(axis=1)])
+df.describe()
+
+Exploring mushrooms:
+We get a nan in some of our columns that are throwing off the labels for the pie charts. Added code up front to change them to "No Data"
