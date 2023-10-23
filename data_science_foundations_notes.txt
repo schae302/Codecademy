@@ -35,3 +35,4 @@ df.describe()
 
 Exploring mushrooms:
 We get a nan in some of our columns that are throwing off the labels for the pie charts. Added code up front to change them to "No Data"
+
